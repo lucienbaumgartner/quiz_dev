@@ -1,0 +1,6 @@
+$().ready(function(){
+    $.getJSON( "/QA.JSON", function( data ) {
+    console.log(data);
+    $("#text").html(data["text"]);
+  });
+});
