@@ -83,4 +83,9 @@ img.question-image {
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+
+.disabled{
+    pointer-events:none;
+    opacity:0.7;
+}
 </style>

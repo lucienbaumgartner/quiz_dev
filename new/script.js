@@ -6,7 +6,6 @@ var quiz = [
            "question" : "Q1: Who came up with the theory of relativity?",
            "image" : "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
            "choices" : [
-                                   "Sir Isaac Newton",
                                    "Nicolaus Copernicus",
                                    "Albert Einstein",
                                    "Ralph Waldo Emmerson"
@@ -87,12 +86,14 @@ jQuery(document).ready(function ($) {
 
     function processQuestion(choice) {
         if (quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']) {
+            $('.choice').addClass('disabled');
             $('.choice').eq(choice).css({
                 'background-color': '#50D943'
             });
             $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
             score++;
         } else {
+            $('.choice').addClass('disabled');
             $('.choice').eq(choice).css({
                 'background-color': '#D92623'
             });
@@ -110,8 +111,8 @@ jQuery(document).ready(function ($) {
             }
         });
         $('#submitbutton').show();
-    }
 
+    }
 
     function setupButtons() {
         $('.choice').on('mouseover', function () {
