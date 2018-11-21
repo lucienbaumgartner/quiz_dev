@@ -1,3 +1,0 @@
-## Quiz app
-
-Dev repo
