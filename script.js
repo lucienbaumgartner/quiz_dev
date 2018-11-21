@@ -6,13 +6,13 @@ var quiz = [
            "question" : "Q1: Who came up with the theory of relativity?",
            "image" : "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
            "choices" : [
-                                   "Sir Isaac Newton",
                                    "Nicolaus Copernicus",
                                    "Albert Einstein",
                                    "Ralph Waldo Emmerson"
                                ],
            "correct" : "Albert Einstein",
            "explanation" : "Albert Einstein drafted the special theory of relativity in 1905.",
+           "graphics" : '<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg" alt="Smiley face" height="200" width="200" class="center">'
        },
        {
            "question" : "Q2: Who is on the two dollar bill?",
@@ -25,6 +25,7 @@ var quiz = [
                                ],
            "correct" : "Thomas Jefferson",
            "explanation" : "The two dollar bill is seldom seen in circulation. As a result, some businesses are confused when presented with the note.",
+           "graphics" : "",
        },
        {
            "question" : "Q3: What event began on April 12, 1861?",
@@ -37,6 +38,7 @@ var quiz = [
                                ],
            "correct" : "American Civil War began",
            "explanation" : "South Carolina came under attack when Confederate soldiers attacked Fort Sumter. The war lasted until April 9th 1865.",
+           "graphics" : "",
        },
 
 
@@ -87,16 +89,24 @@ jQuery(document).ready(function ($) {
 
     function processQuestion(choice) {
         if (quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']) {
+            if (quiz[currentquestion]['graphics'].length > 0) {
+              $('#question-image').remove();
+            }
+            $('.choice').addClass('disabled');
             $('.choice').eq(choice).css({
                 'background-color': '#50D943'
             });
-            $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+            $('#explanation').html(quiz[currentquestion]['graphics'] + '<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
             score++;
         } else {
+            if (quiz[currentquestion]['graphics'].length > 0) {
+              $('#question-image').remove();
+            }
+            $('.choice').addClass('disabled');
             $('.choice').eq(choice).css({
                 'background-color': '#D92623'
             });
-            $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+            $('#explanation').html(quiz[currentquestion]['graphics'] + '<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
         }
         currentquestion++;
         $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function () {
@@ -110,8 +120,8 @@ jQuery(document).ready(function ($) {
             }
         });
         $('#submitbutton').show();
-    }
 
+    }
 
     function setupButtons() {
         $('.choice').on('mouseover', function () {
@@ -138,7 +148,7 @@ jQuery(document).ready(function ($) {
 
 
     function endQuiz() {
-        $('#explanation').empty();
+        c;
         $('#question').empty();
         $('#choice-block').empty();
         $('#submitbutton').remove();
