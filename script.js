@@ -148,7 +148,7 @@ jQuery(document).ready(function ($) {
 
 
     function endQuiz() {
-        c;
+        $('#explanation').empty();
         $('#question').empty();
         $('#choice-block').empty();
         $('#submitbutton').remove();
