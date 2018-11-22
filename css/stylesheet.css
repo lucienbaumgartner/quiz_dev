@@ -106,7 +106,8 @@ img.question-image {
 #explanation {
   margin: 0 auto;
   padding: 40px;
-  width: 60%; }
+  width: 65%;
+  font-size: 90%; }
 
 .choice {
   background: #e5e5d8; }
