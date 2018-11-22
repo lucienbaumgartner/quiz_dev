@@ -59,7 +59,8 @@ img.question-image {
   display: block;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: none; }
 
 #submitbutton {
   background: #4D9898; }

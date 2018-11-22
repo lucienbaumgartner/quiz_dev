@@ -66,6 +66,7 @@ img.question-image {
     list-style:none;
     margin:0;
     padding:0;
+    background: none;
 }
 #submitbutton {
     background:$secondary-color;
@@ -81,12 +82,12 @@ img.question-image {
 }
 .choice {
   background: $secondary-color;
-  
+
 }
 .choice-box {
     display:block;
     text-align:center;
-    background:$secondary-color;
+    background: $secondary-color;
     margin:8px auto;
     padding:10px 0;
     border:1px solid #666;
