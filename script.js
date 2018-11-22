@@ -1,3 +1,4 @@
+
 var quiztitle = "Social Security Quiz";
 
 
@@ -126,12 +127,12 @@ jQuery(document).ready(function ($) {
     function setupButtons() {
         $('.choice').on('mouseover', function () {
             $(this).css({
-                'background': '#4D9898'
+                'background': 'yellow'
             });
         });
         $('.choice').on('mouseout', function () {
             $(this).css({
-                'background': '#4D9898'
+                'background': 'yellow'
             });
         })
         $('.choice').on('click', function () {
