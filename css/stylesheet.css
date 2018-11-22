@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Poppins";
-  src: url("./fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype"); }
+  src: url("./../fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype"); }
 /*css reset */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, code, small, strike, strong, sub, sup, b, u, i {
   border: 0;
