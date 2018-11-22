@@ -32,7 +32,8 @@ body {
   font-family: 'Roboto-Thin';
   letter-spacing: 1px;
   font-size: 16px;
-  margin: 0; }
+  margin: 0;
+  height: 100vh; }
 
 ol, ul {
   list-style: none; }
