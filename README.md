@@ -10,7 +10,7 @@ following things still need to be done:
 
 ## 101
 
-# How I can I do my own quiz using the app?
+### How I can I do my own quiz using the app?
 
 The easiest is the following:
 
@@ -45,7 +45,7 @@ var quiz = [
    ];
 ```
 
-# A note on including graphics in your explanation box
+### A note on including graphics in your explanation box
 
 If you want to include graphics as part of your explanation to an answer, you need to include the whole HTML/CSS-specification of the picture to control its aestethics:
 
@@ -74,7 +74,7 @@ Note that you can specify properties of the class of the image in your sass file
 ```
 
 
-# Deploy the app on your website
+### Deploy the app on your website
 
 To deploy the app on your website or your blog entry you just need to include it within an iframe-element:
 
@@ -82,7 +82,7 @@ To deploy the app on your website or your blog entry you just need to include it
 <iframe src="https://lucienbaumgartner.github.io/quiz_dev/" width="200" height="200"></iframe>
 ```
 
-# Working with sass-stylesheets
+### Working with sass-stylesheets
 
 The app is enables the use of sass (syntactically awesome style sheets - aka css on steroids). If you are familiar with the format, you have to set up a ruby sass-css converter. To do so, run the following commands in your terminal to install ruby via homebrew as well as the sass gem:
 
