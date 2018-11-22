@@ -71,6 +71,8 @@ img.question-image {
 
 .choice {
   background: #4D9898; }
+  .choice:hover {
+    background: yellow; }
 
 .choice-box {
   display: block;
@@ -83,6 +85,8 @@ img.question-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
+  .choice-box:hover {
+    background: yellow; }
 
 .disabled {
   pointer-events: none;
