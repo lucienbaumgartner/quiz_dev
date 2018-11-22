@@ -125,16 +125,6 @@ jQuery(document).ready(function ($) {
     }
 
     function setupButtons() {
-        $('.choice').on('mouseover', function () {
-            $(this).css({
-                'background': 'yellow'
-            });
-        });
-        $('.choice').on('mouseout', function () {
-            $(this).css({
-                'background': '#4D9898'
-            });
-        })
         $('.choice').on('click', function () {
             picked = $(this).attr('data-index');
             $('.choice').removeAttr('style').off('mouseout mouseover');
