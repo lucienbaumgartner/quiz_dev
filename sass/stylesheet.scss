@@ -57,6 +57,7 @@ strong {
     font-weight:700;
 }
 #frame {
+    width:50%;
     margin: auto;
     border:0.1px solid #ccc;
     border-radius: 25px;
@@ -103,7 +104,7 @@ p.pager {
 img.question-image {
     display:block;
     max-width:250px;
-    margin:10px auto -60px auto;
+    margin:10px auto;
     // border:1px solid #ccc;
     width:100%;
     height:auto;
@@ -111,6 +112,7 @@ img.question-image {
 #choice-block {
     display:block;
     list-style:none;
+    //margin:-50px 0 0 0;
     margin:0;
     padding:0;
     background: none;
@@ -121,7 +123,7 @@ img.question-image {
 #explanation {
     margin:0 auto;
     padding:40px;
-    width:75%;
+    width:60%;
 }
 .choice {
   background: $secondary-color;
@@ -140,7 +142,7 @@ img.question-image {
     -moz-border-radius: 5px;
     border-radius: 5px;
     &:hover {
-      background: transparentize($secondary-color, 0.6);
+      background: transparentize($secondary-color, 0.4);
     }
 
 }

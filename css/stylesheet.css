@@ -43,6 +43,7 @@ strong {
   font-weight: 700; }
 
 #frame {
+  width: 50%;
   margin: auto;
   border: 0.1px solid #ccc;
   border-radius: 25px;
@@ -88,7 +89,7 @@ p.pager {
 img.question-image {
   display: block;
   max-width: 250px;
-  margin: 10px auto -60px auto;
+  margin: 10px auto;
   width: 100%;
   height: auto; }
 
@@ -105,7 +106,7 @@ img.question-image {
 #explanation {
   margin: 0 auto;
   padding: 40px;
-  width: 75%; }
+  width: 60%; }
 
 .choice {
   background: #e5e5d8; }
@@ -122,7 +123,7 @@ img.question-image {
   -moz-border-radius: 5px;
   border-radius: 5px; }
   .choice-box:hover {
-    background: rgba(229, 229, 216, 0.4); }
+    background: rgba(229, 229, 216, 0.6); }
 
 .disabled {
   pointer-events: none;

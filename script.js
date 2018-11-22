@@ -126,6 +126,11 @@ jQuery(document).ready(function ($) {
 
     function setupButtons() {
         $('.choice').on('click', function () {
+          /*
+            $('.choice-block').css({
+              "padding-top": "200px"
+            });
+            */
             picked = $(this).attr('data-index');
             $('.choice').removeAttr('style').off('mouseout mouseover');
             $(this).css({
