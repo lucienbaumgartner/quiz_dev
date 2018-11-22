@@ -29,6 +29,7 @@ strong {
   width: 50%;
   margin: auto;
   border: 1px solid #ccc;
+  border-radius: 25px;
   padding: 10px;
   background-color: #187474; }
 
