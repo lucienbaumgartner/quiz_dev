@@ -132,7 +132,7 @@ jQuery(document).ready(function ($) {
         });
         $('.choice').on('mouseout', function () {
             $(this).css({
-                'background': 'yellow'
+                'background': '#4D9898'
             });
         })
         $('.choice').on('click', function () {
