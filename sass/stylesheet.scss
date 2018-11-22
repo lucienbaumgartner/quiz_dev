@@ -69,11 +69,7 @@ img.question-image {
     background: none;
 }
 #submitbutton {
-    background:$secondary-color;
-    &:hover {
-      background: yellow;
-    }
-
+    background: $secondary-color;
 }
 #explanation {
     margin:0 auto;
