@@ -91,7 +91,7 @@ $ brew install ruby
 $ gem install sass
 ```
 
-Now you can tell ruby to watch your either a folder with all your sass files in order to convert them to the output path (your css folder), or just single files. In this case We just listen to the whole folder
+Now you can tell ruby to watch your either a folder with all your sass files in order to convert them to the output path (your css folder), or just single files. In this case We just listen to the whole folder:
 
 ```
 $ cd quiz_dev
@@ -99,3 +99,5 @@ $ sass --watch sass:css
 ```
 
 Now all the changes done to any files in `/sass` are automatically converted to updated in the `/css` folder.
+
+See [here](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass) for a full documentation on sass

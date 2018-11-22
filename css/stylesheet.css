@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Poppins";
   src: url("./../fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype"); }
-/*css reset */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, code, small, strike, strong, sub, sup, b, u, i {
   border: 0;
   font-size: 100%;
@@ -20,6 +19,9 @@ body {
 ol, ul {
   list-style: none; }
 
+li {
+  background: #4D9898; }
+
 strong {
   font-weight: 700; }
 
@@ -27,8 +29,8 @@ strong {
   width: 50%;
   margin: auto;
   border: 1px solid #ccc;
-  background: #fff;
-  padding: 10px; }
+  padding: 10px;
+  background-color: #187474; }
 
 h1 {
   text-align: left;
@@ -60,23 +62,23 @@ img.question-image {
   padding: 0; }
 
 #submitbutton {
-  background: #5a6b8c; }
-
-#submitbutton:hover {
-  background: #7b8da6; }
+  background: #4D9898; }
 
 #explanation {
   margin: 0 auto;
   padding: 40px;
   width: 75%; }
 
+.choice {
+  background: #4D9898; }
+
 .choice-box {
   display: block;
   text-align: center;
+  background: #4D9898;
   margin: 8px auto;
   padding: 10px 0;
   border: 1px solid #666;
-  cursor: pointer;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }

@@ -1,11 +1,11 @@
-
+$primary-color: #187474;
+$secondary-color: #4D9898;
 
 @font-face {
   font-family: "Poppins";
   src: url("./../fonts/Poppins/Poppins-ThinItalic.ttf") format('truetype');
 }
 
-/*css reset */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, code, small, strike, strong, sub, sup, b, u, i {
     border:0;
     font-size:100%;
@@ -24,6 +24,10 @@ body {
 ol, ul {
     list-style:none;
 }
+li {
+  background:$secondary-color;
+
+}
 strong {
     font-weight:700;
 }
@@ -31,8 +35,8 @@ strong {
     width:50%;
     margin: auto;
     border:1px solid #ccc;
-    background:#fff;
     padding:10px;
+    background-color: $primary-color;
 }
 h1 {
     text-align:left;
@@ -64,33 +68,34 @@ img.question-image {
     padding:0;
 }
 #submitbutton {
-    background:#5a6b8c;
-}
-#submitbutton:hover {
-    background:#7b8da6;
+    background:$secondary-color;
+
 }
 #explanation {
     margin:0 auto;
     padding:40px;
     width:75%;
 }
+.choice {
+  background: $secondary-color;
+}
 .choice-box {
     display:block;
     text-align:center;
+    background:$secondary-color;
     margin:8px auto;
     padding:10px 0;
     border:1px solid #666;
-    cursor:pointer;
+    // cursor:pointer;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-}
 
+}
 .disabled{
     pointer-events:none;
     opacity:0.7;
 }
-
 .center {
     display: block;
     margin-left: auto;

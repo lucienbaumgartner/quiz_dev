@@ -126,12 +126,12 @@ jQuery(document).ready(function ($) {
     function setupButtons() {
         $('.choice').on('mouseover', function () {
             $(this).css({
-                'background-color': '#e1e1e1'
+                'background': '#4D9898'
             });
         });
         $('.choice').on('mouseout', function () {
             $(this).css({
-                'background-color': '#fff'
+                'background': '#4D9898'
             });
         })
         $('.choice').on('click', function () {
@@ -140,7 +140,7 @@ jQuery(document).ready(function ($) {
             $(this).css({
                 'border-color': '#222',
                 'font-weight': 700,
-                'background-color': '#c1c1c1'
+                'background-color': '#4D9898'
             });
              processQuestion(picked);
         });
