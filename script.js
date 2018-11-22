@@ -1,10 +1,10 @@
 
-var quiztitle = "Social Security Quiz";
+var quiztitle = "Data Quiz";
 
 
 var quiz = [
        {
-           "question" : "Q1: Who came up with the theory of relativity?",
+           "question" : "Who came up with the theory of relativity?",
            "image" : "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
            "choices" : [
                                    "Nicolaus Copernicus",
@@ -72,7 +72,7 @@ jQuery(document).ready(function ($) {
         submt = true;
         $('#explanation').empty();
         $('#question').text(quiz[currentquestion]['question']);
-        $('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
+        $('#pager').text('<Question ' + Number(currentquestion + 1) + ' of ' + quiz.length + '>');
         if (quiz[currentquestion].hasOwnProperty('image') && quiz[currentquestion]['image'] != "") {
             if ($('#question-image').length == 0) {
                 $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question'])).insertAfter('#question');
@@ -162,7 +162,7 @@ jQuery(document).ready(function ($) {
         //add pager and questions
         if (typeof quiz !== "undefined" && $.type(quiz) === "array") {
             //add pager
-            $(document.createElement('p')).addClass('pager').attr('id', 'pager').text('Question 1 of ' + quiz.length).appendTo('#frame');
+            $(document.createElement('p')).addClass('pager').attr('id', 'pager').text('<Question 1 of ' + quiz.length +'>').appendTo('#frame');
             //add first question
             $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
             //add image if present

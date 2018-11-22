@@ -1,9 +1,33 @@
-$primary-color: #187474;
-$secondary-color: #4D9898;
+$primary-color: rgba(255,250,240,0.5);
+$secondary-color: #e5e5d8;
 
 @font-face {
   font-family: "Poppins";
   src: url("./../fonts/Poppins/Poppins-ThinItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Vidaloka";
+  src: url("./../fonts/Vidaloka/Vidaloka-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Abril";
+  src: url("./../fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "SourceCodePro-Light";
+  src: url("./../fonts/Source_Code_Pro/SourceCodePro-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("./../fonts/Roboto/Roboto-Thin.ttf") format('truetype');
 }
 
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, code, small, strike, strong, sub, sup, b, u, i {
@@ -19,14 +43,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
     line-height:1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto-Thin';
+    letter-spacing: 1px;
+    font-size: 20px;
 }
 ol, ul {
     list-style:none;
 }
 li {
   background:$secondary-color;
-
 }
 strong {
     font-weight:700;
@@ -34,31 +59,53 @@ strong {
 #frame {
     width:50%;
     margin: auto;
-    border:1px solid #ccc;
+    border:0.1px solid #ccc;
     border-radius: 25px;
     padding:10px;
     background-color: $primary-color;
 }
 h1 {
-    text-align:left;
-    border-bottom:1px solid #999;
-    padding:0;
-    width:auto
+    margin:30px 0 -2px 0;
+    width:auto;
+    font-family:"Abril";
+    font-size: 300%;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+    &::after {
+    content:'';
+    position:absolute;
+    display: block;
+    width:150px;
+    height:1px;
+    background:#000;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    }
 }
 h2 {
-    padding:0;
+    padding:15px;
     text-align:center;
     margin:20px 0;
+    font-size: 120%;
+    font-family: "Roboto-Thin";
 }
 p.pager {
     margin:5px 0 5px;
     color:#999;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'SourceCodePro-Light';
+    letter-spacing: 3px;
 }
 img.question-image {
     display:block;
     max-width:250px;
-    margin:10px auto;
-    border:1px solid #ccc;
+    margin:10px auto -60px auto;
+    // border:1px solid #ccc;
     width:100%;
     height:auto;
 }
@@ -85,15 +132,16 @@ img.question-image {
     display:block;
     text-align:center;
     background: $secondary-color;
+    width: 50%;
     margin:8px auto;
     padding:10px 0;
-    border:1px solid #666;
+    // border:1px solid #666;
     cursor:pointer;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     &:hover {
-      background: yellow;
+      background: transparentize($secondary-color, 0.6);
     }
 
 }
