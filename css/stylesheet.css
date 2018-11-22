@@ -73,8 +73,6 @@ img.question-image {
 
 .choice {
   background: #4D9898; }
-  .choice:hover {
-    background: yellow; }
 
 .choice-box {
   display: block;
