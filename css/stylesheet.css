@@ -60,9 +60,13 @@ img.question-image {
   list-style: none;
   margin: 0;
   padding: 0; }
+  #choice-block:hover {
+    background: yellow; }
 
 #submitbutton {
   background: #4D9898; }
+  #submitbutton:hover {
+    background: yellow; }
 
 #explanation {
   margin: 0 auto;
