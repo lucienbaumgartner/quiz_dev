@@ -32,8 +32,7 @@ body {
   font-family: 'Roboto-Thin';
   letter-spacing: 1px;
   font-size: 16px;
-  margin: 0;
-  height: 100vh; }
+  margin: 0; }
 
 ol, ul {
   list-style: none; }
@@ -46,6 +45,7 @@ strong {
 
 #frame {
   width: 100%;
+  height: 100vh;
   border: 0.1px solid #ccc;
   border-radius: 25px;
   padding: 10px;
