@@ -13,7 +13,7 @@ var quiz = [
                                ],
            "correct" : "Albert Einstein",
            "explanation" : "Albert Einstein drafted the special theory of relativity in 1905.",
-           "graphics" : '<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg" alt="Smiley face" height="200" width="200" class="center">'
+           "graphics" : '<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg" alt="Smiley face" height="200" width="100" class="center">'
        },
        {
            "question" : "Q2: Who is on the two dollar bill?",
@@ -174,13 +174,16 @@ jQuery(document).ready(function ($) {
             if (quiz[0].hasOwnProperty('image') && quiz[0]['image'] != "") {
                 $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
             }
-            $(document.createElement('p')).addClass('explanation').attr('id', 'explanation').html('&nbsp;').appendTo('#frame');
 
             //questions holder
             $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
 
             //add choices
             addChoices(quiz[0]['choices']);
+
+
+
+            $(document.createElement('p')).addClass('explanation').attr('id', 'explanation').html('&nbsp;').appendTo('#frame');
 
             //add submit button
             $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({
