@@ -1,3 +1,5 @@
+
+
 ## Quiz app for the DDJ18 course at UZH
 
 following things still need to be done:
@@ -7,6 +9,8 @@ following things still need to be done:
 - [x] write 101 for students
 - [x] check iframe implementability
 - [ ] fix bugs
+
+![](display/einstein.png)
 
 ## 101
 

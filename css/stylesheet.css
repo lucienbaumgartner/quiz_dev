@@ -152,7 +152,6 @@ img.question-image {
       width: 70%; } }
   @media (min-width: 1001px) {
     .center {
-      width: 50%;
-      max-width: 200px; } }
+      width: 50%; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
