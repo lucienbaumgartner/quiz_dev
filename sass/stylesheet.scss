@@ -1,5 +1,5 @@
-$primary-color: rgba(255,250,240,0.5);
-$secondary-color: #e5e5d8;
+$primary-color: #F5E8D7;
+$secondary-color: #FFCFB3;
 
 @font-face {
   font-family: "Poppins";
@@ -22,8 +22,8 @@ $secondary-color: #e5e5d8;
 }
 
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url("./../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+  font-family: "Roboto-Light";
+  src: url("./../fonts/Roboto/Roboto-Light.ttf") format('truetype');
 }
 @font-face {
   font-family: "Roboto-Thin";
@@ -43,10 +43,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
     line-height:1;
-    font-family: 'Roboto-Thin';
+    font-family: 'Roboto-Light';
     letter-spacing: 1px;
-    margin:0;
-    width:100vh;
+    overflow: hidden;
+    background-color: $primary-color;
 }
 ol, ul {
     list-style:none;
@@ -57,12 +57,19 @@ li {
 strong {
     font-weight:700;
 }
+#panel {
+  //max-width:100vh;
+  //max-height:100vh;
+
+}
 #frame {
+    color:#505B70;
+    position: relative;
     //margin: auto;
-    border:0.1px solid #ccc;
-    border-radius: 25px;
+    //border:0.1px solid #ccc;
+    //border-radius: 25px;
     padding:10px;
-    background-color: $primary-color;
+    //display: block;
 }
 h1 {
     margin:30px 0 -2px 0;
@@ -89,13 +96,13 @@ h1 {
 h2 {
     padding:15px;
     text-align:center;
-    margin:20px 0;
+    margin:20px 0 0 0;
     font-size: 120%;
-    font-family: "Roboto-Thin";
+    font-family: "Roboto-Light";
 }
 p.pager {
     margin:5px 0 5px;
-    color:#999;
+    color:#8F223A;
     text-align: center;
     padding-top: 15px;
     font-family: 'SourceCodePro-Light';
@@ -103,17 +110,18 @@ p.pager {
 }
 img.question-image {
     display:block;
-    max-width:250px;
+    //width: 100%;
+    max-width:50%;
     margin:10px auto;
     // border:1px solid #ccc;
-    width:100%;
+    // width:100%;
     height:auto;
 }
 #choice-block {
     display:block;
     list-style:none;
     //margin:-50px 0 0 0;
-    margin:0;
+    margin:20px 0 0 0;
     padding:0;
     background: none;
 }
@@ -123,7 +131,7 @@ img.question-image {
 #explanation {
     margin:0 auto;
     padding:40px;
-    width:65%;
+    width:50%;
     font-size: 90%;
 }
 .choice {
@@ -155,6 +163,7 @@ img.question-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
+    height: auto;
     margin-bottom: 30px;
 }
