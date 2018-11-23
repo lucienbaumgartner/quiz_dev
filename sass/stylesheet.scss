@@ -141,7 +141,12 @@ img.question-image {
 #explanation {
     margin:0 auto;
     padding:40px;
-    width:50%;
+    @media (min-width: 320px) and (max-width: 1000px) {
+    width: 50%;
+    }
+    @media (min-width: 1001px) {
+    width: 40%;
+    }
     font-size: 90%;
 }
 .choice {
@@ -154,11 +159,11 @@ img.question-image {
     display:block;
     text-align:center;
     background: $secondary-color;
-    @media (min-width: 320px) and (max-width: 700px) {
+    @media (min-width: 320px) and (max-width: 1000px) {
     width: 50%;
     }
-    @media (min-width: 701px) {
-    width: 20%;
+    @media (min-width: 1001px) {
+    width: 40%;
     }
     margin:8px auto;
     padding:10px;
@@ -177,10 +182,17 @@ img.question-image {
     opacity:0.7;
 }
 .center {
+  @media (min-width: 320px) and (max-width: 1000px) {
+  width: 70%;
+  }
+  @media (min-width: 1001px) {
+  width: 50%;
+  max-width: 200px;
+  }
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    //width: 80%;
     height: auto;
     margin-bottom: 30px;
 }
