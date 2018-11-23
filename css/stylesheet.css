@@ -92,12 +92,6 @@ img.question-image {
   display: block;
   margin: 10px auto;
   height: auto; }
-  @media (min-width: 320px) and (max-width: 1000px) {
-    img.question-image {
-      width: 50%; } }
-  @media (min-width: 1001px) {
-    img.question-image {
-      width: 20%; } }
 
 #choice-block {
   display: block;
@@ -129,10 +123,10 @@ img.question-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-  @media (min-width: 320px) and (max-width: 1000px) {
+  @media (min-width: 320px) and (max-width: 700px) {
     .choice-box {
       width: 50%; } }
-  @media (min-width: 1001px) {
+  @media (min-width: 701px) {
     .choice-box {
       width: 20%; } }
   .choice-box:hover {
