@@ -121,7 +121,12 @@ p.pager {
 img.question-image {
     display:block;
     //width: 100%;
-    max-width:50%;
+    @media (min-width: 320px) and (max-width: 1000px) {
+    width: 50%;
+    }
+    @media (min-width: 1001px) {
+    width: 20%;
+    }
     margin:10px auto;
     // border:1px solid #ccc;
     // width:100%;

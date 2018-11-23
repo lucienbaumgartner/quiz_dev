@@ -90,9 +90,14 @@ p.pager {
 
 img.question-image {
   display: block;
-  max-width: 50%;
   margin: 10px auto;
   height: auto; }
+  @media (min-width: 320px) and (max-width: 1000px) {
+    img.question-image {
+      width: 50%; } }
+  @media (min-width: 1001px) {
+    img.question-image {
+      width: 20%; } }
 
 #choice-block {
   display: block;
