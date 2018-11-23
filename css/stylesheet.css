@@ -14,6 +14,9 @@
   font-family: "Roboto-Light";
   src: url("./../fonts/Roboto/Roboto-Light.ttf") format("truetype"); }
 @font-face {
+  font-family: "Roboto-Regular";
+  src: url("./../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
+@font-face {
   font-family: "Roboto-Thin";
   src: url("./../fonts/Roboto/Roboto-Thin.ttf") format("truetype"); }
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, code, small, strike, strong, sub, sup, b, u, i {
@@ -31,7 +34,7 @@ body {
   line-height: 1;
   font-family: 'Roboto-Light';
   letter-spacing: 1px;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: #F5E8D7; }
 
 ol, ul {
@@ -46,7 +49,8 @@ strong {
 #frame {
   color: #505B70;
   position: relative;
-  padding: 10px; }
+  padding: 10px;
+  height: auto; }
 
 h1 {
   margin: 30px 0 -2px 0;
@@ -63,7 +67,7 @@ h1 {
     display: block;
     width: 150px;
     height: 1px;
-    background: #000;
+    background: #505B70;
     bottom: 0;
     left: 0;
     right: 0;
@@ -110,16 +114,22 @@ img.question-image {
   background: #FFCFB3; }
 
 .choice-box {
+  color: #505B70;
   display: block;
   text-align: center;
   background: #FFCFB3;
-  width: 50%;
   margin: 8px auto;
-  padding: 10px 0;
+  padding: 10px;
   cursor: pointer;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
+  @media (min-width: 320px) and (max-width: 1000px) {
+    .choice-box {
+      width: 50%; } }
+  @media (min-width: 1001px) {
+    .choice-box {
+      width: 20%; } }
   .choice-box:hover {
     background: rgba(255, 207, 179, 0.6); }
 

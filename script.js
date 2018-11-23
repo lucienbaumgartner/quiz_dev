@@ -5,7 +5,7 @@ var quiztitle = "Data Quiz";
 var quiz = [
        {
            "question" : "Who came up with the theory of relativity?",
-           "image" : "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
+           "image" : "",
            "choices" : [
                                    "Nicolaus Copernicus",
                                    "Albert Einstein",
@@ -13,10 +13,10 @@ var quiz = [
                                ],
            "correct" : "Albert Einstein",
            "explanation" : "Albert Einstein drafted the special theory of relativity in 1905.",
-           "graphics" : '<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg" alt="Smiley face" class="center">'
+           "graphics" : '<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg" alt="Einstein" class="center">'
        },
        {
-           "question" : "Q2: Who is on the two dollar bill?",
+           "question" : "Who is on the two dollar bill?",
            "image" : "http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg",
            "choices" : [
                                    "Thomas Jefferson",
@@ -29,7 +29,7 @@ var quiz = [
            "graphics" : "",
        },
        {
-           "question" : "Q3: What event began on April 12, 1861?",
+           "question" : "What event began on April 12, 1861?",
            "image" : "",
            "choices" : [
                                    "First manned flight",
@@ -50,6 +50,10 @@ var currentquestion = 0,
     score = 0,
     submt = true,
     picked;
+
+function findCorrectAnswer(element) {
+      return element == quiz[currentquestion]['correct'];
+    }
 
 jQuery(document).ready(function ($) {
 
@@ -105,7 +109,14 @@ jQuery(document).ready(function ($) {
             }
             $('.choice').addClass('disabled');
             $('.choice').eq(choice).css({
-                'background-color': '#D92623'
+                'background-color': '#8F223A'
+            });
+            $('.choice-box').eq(choice).css({
+                'color': 'silver'
+            });
+            var tmp = quiz[currentquestion]["choices"]
+            $('.choice').eq(tmp.findIndex(findCorrectAnswer)).css({
+                'background-color': '#50D943'
             });
             $('#explanation').html(quiz[currentquestion]['graphics'] + '<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
         }
@@ -188,7 +199,7 @@ jQuery(document).ready(function ($) {
             //add submit button
             $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({
                 'font-weight': 700,
-                'color': '#222',
+                'color': '$main-font-color',
                 'padding': '30px 0'
             }).appendTo('#frame');
 
