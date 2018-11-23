@@ -31,8 +31,8 @@ body {
   line-height: 1;
   font-family: 'Roboto-Thin';
   letter-spacing: 1px;
-  font-size: 16px;
-  margin: 0; }
+  margin: 0;
+  width: 100vh; }
 
 ol, ul {
   list-style: none; }
@@ -44,7 +44,6 @@ strong {
   font-weight: 700; }
 
 #frame {
-  width: 100vh;
   border: 0.1px solid #ccc;
   border-radius: 25px;
   padding: 10px;
