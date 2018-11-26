@@ -2,6 +2,8 @@
 
 ## Quiz app for the DDJ18 course at UZH
 
+<p align="center"><img src ="display/einstein.png" width=500px></p>
+
 following things still need to be done:
 
 - [x] write proper style sheet (sass) // used FT color scheme
@@ -9,8 +11,6 @@ following things still need to be done:
 - [x] write 101 for students
 - [x] check iframe implementability
 - [x] fix bugs
-
-<p align="center"><img src ="display/einstein.png" width=300px></p>
 
 ## 101
 
