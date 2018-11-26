@@ -4,9 +4,6 @@
 
 <p align="center"><img src ="display/einstein.png" width=500px></p>
 
-<iframe src="https://lucienbaumgartner.github.io/quiz_dev/" width="1500" height="800"></iframe>
-
-
 following things still need to be done:
 
 - [x] write proper style sheet (sass) // used FT color scheme
