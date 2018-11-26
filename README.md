@@ -10,7 +10,7 @@ following things still need to be done:
 - [x] check iframe implementability
 - [x] fix bugs
 
-<p align="center><img src ="display/einstein.png" width=300px></p>
+<p align="center"><img src ="display/einstein.png" width=300px></p>
 
 ## 101
 
