@@ -4,13 +4,13 @@
 
 following things still need to be done:
 
-- [ ] write proper style sheet (sass)
+- [x] write proper style sheet (sass) // used FT color scheme
 - [x] check sass - css conversion
 - [x] write 101 for students
 - [x] check iframe implementability
-- [ ] fix bugs
+- [x] fix bugs
 
-![](display/einstein.png)
+<div style="text-align:center"><img src ="display/einstein.png" width=400px></div>
 
 ## 101
 
