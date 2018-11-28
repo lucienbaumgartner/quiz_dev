@@ -1,4 +1,3 @@
-
 var quiztitle = "Data Quiz";
 
 
@@ -6,8 +5,10 @@ var quiz = [
        {
            "question" : "Who came up with the theory of relativity?",
            "image" : "",
-           "choices" : [           "Albert Einstein",
-                                   "Ralph Waldo Emmerson"
+           "choices" : [
+                                   "Nicolaus Copernicus",
+                                   "Albert Einstein",
+                                   "Ralph Waldo Emmerson",
                                    "Some other dude"
                                ],
            "correct" : "Albert Einstein",

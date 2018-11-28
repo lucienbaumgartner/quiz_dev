@@ -67,7 +67,7 @@ git commit -m 'some name for your changes'
 git push -u origin master
 ```
 
-### Develop local first
+### Develop locally first
 
 If you had to commit and push all changes to github to display them in order to see if everything works as desired, the whole development process would be super cumbersome. Instead, you can compile your app locally in your webbrowser, using Python (you can also do it differently, just google):
 
