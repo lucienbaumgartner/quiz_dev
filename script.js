@@ -6,10 +6,9 @@ var quiz = [
        {
            "question" : "Who came up with the theory of relativity?",
            "image" : "",
-           "choices" : [
-                                   "XXX",
-                                   "YYY",
+           "choices" : [           "Albert Einstein",
                                    "Ralph Waldo Emmerson"
+                                   "Some other dude"
                                ],
            "correct" : "Albert Einstein",
            "explanation" : "Albert Einstein drafted the special theory of relativity in 1905.",
