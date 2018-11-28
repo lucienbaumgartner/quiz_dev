@@ -2,6 +2,8 @@
 
 ## Quiz app for the DDJ18 course at UZH
 
+The interactive version of the quiz can be found [here](https://lucienbaumgartner.github.io/quiz_dev/).
+
 <p align="center"><img src ="display/einstein.png" width=500px></p>
 
 following things still need to be done:
@@ -11,6 +13,7 @@ following things still need to be done:
 - [x] write 101 for students *PLEASE HIT ME UP IF SOMETHING NEEDS FURTHER CLARIFICATION*
 - [x] check iframe implementability
 - [x] fix bugs
+- [ ] beta testing
 
 ## 101
 
