@@ -8,7 +8,7 @@ following things still need to be done:
 
 - [x] write proper style sheet (sass) // used FT color scheme
 - [x] check sass - css conversion
-- [x] write 101 for students
+- [x] write 101 for students *PLEASE HIT ME UP IF SOMETHING NEEDS FURTHER CLARIFICATION*
 - [x] check iframe implementability
 - [x] fix bugs
 
@@ -117,6 +117,27 @@ To deploy the app on your website or your blog entry you just need to include it
 <iframe src="https://<your username>.github.io/quiz_dev/" width="200" height="200"></iframe>
 ```
 
+### Stay up to date with changes in the forked repo (my app)
+
+To implement changes *I* make to the main framework, you have to add an upstream handler to the cloned fork:
+
+```
+[[terminal]]
+cd quiz_dev
+git remote add upstream git://github.com/lucienbaumgartner/quiz_dev.git
+git fetch upstream
+```
+
+To fetch the changes, just run (again: inside your `quiz_dev` folder):
+
+```
+[[terminal]]
+git pull upstream master
+git push
+```
+
+[Here](https://www.atlassian.com/git/tutorials/syncing/git-fetch) you can read up on fetching.
+
 ### Working with sass-stylesheets instead of normal css
 
 The app is enables the use of sass (syntactically awesome style sheets - aka css on steroids). If you are familiar with the format, you have to set up a ruby sass-css converter. To do so, run the following commands in your terminal to install ruby via homebrew (you might also need to install homebrew) as well as the sass gem:
@@ -135,4 +156,27 @@ $ sass --watch sass:css
 
 Now all the changes done to any files in `/sass` are automatically converted to updated in the `/css` folder.
 
+*PLEASE NOT THAT ANY CHANGES IN /css WILL BE OVERRIDDEN AS SOON AS A NEW SASS FILE IS COMPILED FROM /sass. PLEASE MAKE SURE TO MIGRATE ALL CSS-ONLY CHANGES TO THE .scss-FILE BEFORE WATCHING!!!*
+
 See [here](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass) for a full documentation on sass
+
+
+### A note for wordpress admins
+
+In order for authors on your blog to be able to embed content, such as iframes, you have to append the following changes to your themes `function.php`:
+
+```
+/**
+ * Give authors rights to embed content.
+ */
+
+function add_theme_caps() {
+    // gets the author role
+    $role = get_role( 'author' );
+
+    // This only works, because it accesses the class instance.
+    // would allow the author to edit others' posts for current theme only
+    $role->add_cap( 'unfiltered_html' );
+}
+add_action( 'admin_init', 'add_theme_caps');
+```
