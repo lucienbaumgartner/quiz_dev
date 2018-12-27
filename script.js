@@ -13,7 +13,7 @@ var quiz = [
                                ],
            "correct" : "Albert Einstein",
            "explanation" : "Albert Einstein drafted the special theory of relativity in 1905.",
-           "graphics" : '<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg" alt="Einstein" class="center">'
+           "graphics" : '<img src="./img/save-with-encoding-rstudio.png" alt="Einstein" class="center">'
        },
        {
            "question" : "Who is on the two dollar bill?",
