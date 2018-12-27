@@ -9,7 +9,7 @@ var quiz = [
                                    "Nicolaus Copernicus",
                                    "Albert Einstein",
                                    "Ralph Waldo Emmerson",
-                                   "Some other dude"
+                                   "Some other düderino"
                                ],
            "correct" : "Albert Einstein",
            "explanation" : "Albert Einstein drafted the special theory of relativity in 1905.",
